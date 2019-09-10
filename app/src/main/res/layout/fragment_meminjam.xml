@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MeminjamFragment">
+
+    <TextView
+        android:id="@+id/tv_datpicker_meminjam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/click_date" />
+
+    <ListView
+        android:id="@+id/list_item_meminjam"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_datpicker_meminjam"
+        tools:layout_editor_absoluteX="411dp" />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/empty_view_meminjam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/empty_shelter_image"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_logo"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/empty_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:paddingTop="16dp"
+            android:text="@string/empty_view_title_text"
+            android:textAppearance="?android:textAppearanceMedium"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empty_shelter_image" />
+
+        <TextView
+            android:id="@+id/empty_subtitle_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:paddingTop="8dp"
+            android:text="@string/empty_view_subtitle_text"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#A2AAB0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empty_title_text" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_meminjam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:src="@drawable/ic_add_white_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

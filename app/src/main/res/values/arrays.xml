@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_hutang_options">
+        <item>@string/hutang_dipinjamkan</item>
+        <item>@string/hutang_meminjam</item>
+    </string-array>
+
+    <string-array name="array_keuangan_options">
+        <item>@string/keuangan_pengeluaran</item>
+        <item>@string/keuangan_pemasukkan</item>
+    </string-array>
+</resources>

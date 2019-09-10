@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">Manager Keuangan Mahasiswa</string>
+    <string name="close">Close</string>
+    <string name="open">Open</string>
+    <string name="pref"><![CDATA[<]]></string>
+    <string name="next"><![CDATA[>]]></string>
+    <string name="keuangan">Keuangan</string>
+    <string name="hutang">Hutang</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="setting">Pengaturan</string>
+
+    <string name="dipinjamkan">Dipinjamkan</string>
+    <string name="meminjam">Meminjam</string>
+
+    <string name="hutang_unknown">Unknown</string>
+    <string name="hutang_dipinjamkan">Dipinjamkan</string>
+    <string name="hutang_meminjam">Meminjam</string>
+
+    <string name="keuangan_unknown">Unknown</string>
+    <string name="keuangan_pengeluaran">Pengeluaran</string>
+    <string name="keuangan_pemasukkan">Pemasukkan</string>
+
+    <string name="pemasukkan">Pemasukkan</string>
+    <string name="pengeluaran">Pengeluaran</string>
+
+    <string name="ok">Okay</string>
+    <string name="tambah">Tambah Data</string>
+    <string name="update">Update Data</string>
+    <string name="delete">Delete Data</string>
+    <string name="cancel">Batalkan</string>
+
+    <string name="januari">Jan</string>
+    <string name="febuari">Feb</string>
+    <string name="maret">Mar</string>
+    <string name="april">Apr</string>
+    <string name="mei">Mei</string>
+    <string name="juni">Jun</string>
+    <string name="juli">Jul</string>
+    <string name="agustus">Agu</string>
+    <string name="september">Sep</string>
+    <string name="oktober">Okt</string>
+    <string name="november">Nov</string>
+    <string name="desember">Des</string>
+
+    <string name="nama_barang">Nama Barang</string>
+
+    <string name="addwishlist">Tambah Wishlist</string>
+    <string name="updatewishlist">Update Wishlist</string>
+    <string name="deletewishlist">Delete Wishlist</string>
+
+    <string name="unknow_data">Unknow Data</string>
+
+    <string name="contoh_tanggal">03 Maret 2019</string>
+    <string name="yulio">Yulio Ferdinand</string>
+    <string name="aseng">Aseng Saragih</string>
+    <string name="yana">Rixky Nur Cahyana</string>
+    <string name="contoh_uang">Rp. 50.000</string>
+    <string name="deleteX">X</string>
+
+    <string name="editor_activity_title_new_data">Add a Data</string>
+    <string name="editor_activity_title_edit_data">Edit Data</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="empty_view_title_text">Manager Keuangan Mahasiswa</string>
+    <string name="empty_view_subtitle_text">Tekan Tombol Tambah Untuk Memasukkan Data</string>
+    <string name="ya">Iya</string>
+    <string name="keep_editing">Tidak</string>
+    <string name="delete_dialog_msg">Apakah Anda Ingin Menghapus Data Ini?</string>
+    <string name="update_dialog_msg">Apakah Anda Ingin Meninggalkan Update Data?</string>
+    <string name="tidak">Tidak</string>
+    <string name="click_date">Tekan Untuk Mengambil Tangggal</string>
+    <string name="insert_failed">Gagal Memasukkan Data</string>
+    <string name="insert_success">Berhasil Memasukkan Data</string>
+    <string name="update_failed">Gagal Memperbaruhi Data</string>
+    <string name="update_success">Berhasil Memperbaruhi Data</string>
+    <string name="unsaved_changes_dialog_msg">Apakah Anda Ingin Keluar Dari Menu Editor?</string>
+    <string name="delete_failed">Gagal Menghapus Data</string>
+    <string name="delete_success">Berhasil Menghapus Data</string>
+
+    <string name="app_keuangan_name">Manager Keuangan Mahasiswa</string>
+    <string name="app_hutang_name">Manager Hutang Mahasiswa</string>
+    <string name="app_wishlist_name">Manager Wishlist Mahasiswa</string>
+    <string name="app_setting_name">Manager Setting Mahasiswa</string>
+    <string name="total_saldo">Total Saldo</string>
+    <string name="text_tanggal">Tanggal</string>
+    <string name="text_jumlah">Jumlah</string>
+    <string name="text_keterangan">Keterangan</string>
+    <string name="text_status">Status</string>
+    <string name="keamanan_data">Keamanan Data</string>
+    <string name="tentang_aplikasi">Tentang Aplikasi</string>
+
+    <string name="team_name">Unstoppable Team</string>
+    <string name="history_hutang">History Hutang</string>
+</resources>
