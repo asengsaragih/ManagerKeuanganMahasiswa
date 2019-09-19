@@ -19,7 +19,7 @@ import static org.hamcrest.Matchers.anything;
 import static org.hamcrest.Matchers.startsWith;
 
 @RunWith(AndroidJUnit4.class)
-public class WishlistHapusActivity {
+public class WishlistActivityTest {
     @Rule
     public ActivityTestRule<WishlistActivity> wishlistActivityActivityTestRule =
             new ActivityTestRule<>(WishlistActivity.class);
@@ -32,5 +32,9 @@ public class WishlistHapusActivity {
         onView(withId(R.id.editText_wishlist_nama)).perform(clearText());
         onView(withId(R.id.editText_wishlist_nama)).perform(typeText("sabun"));
         onView(withId(R.id.action_save)).perform(click());
+    }
+
+    @Test
+    public void simpleTest() {
     }
 }
