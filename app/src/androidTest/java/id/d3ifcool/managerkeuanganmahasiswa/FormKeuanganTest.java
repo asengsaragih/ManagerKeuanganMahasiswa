@@ -29,23 +29,6 @@ public class FormKeuanganTest {
     public ActivityTestRule<FormKeuangan> formKeuanganActivityTestRule =
             new ActivityTestRule<>(FormKeuangan.class);
 
-
-//    public static Matcher<View> matchDate(final int year, final int month, final int day) {
-//        return new BoundedMatcher<View, DatePicker>(DatePicker.class) {
-//
-//            @Override
-//            public void describeTo(Description description) {
-//                description.appendText("matches date:");
-//            }
-//
-//            @Override
-//            protected boolean matchesSafely(DatePicker item) {
-//                return (year == item.getYear() && month == item.getMonth() && day == item.getDayOfMonth());
-//            }
-//        };
-//
-//    }
-
     @Test
     public void tambah_data_keuangan() {
         onView(withId(R.id.editText_tanggal_keuangan)).perform(click());

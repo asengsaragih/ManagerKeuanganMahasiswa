@@ -1,5 +1,7 @@
 package id.d3ifcool.managerkeuanganmahasiswa;
 
+import android.support.test.InstrumentationRegistry;
+import android.support.test.espresso.NoMatchingViewException;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 
@@ -9,6 +11,7 @@ import org.junit.runner.RunWith;
 
 import static android.support.test.espresso.Espresso.onData;
 import static android.support.test.espresso.Espresso.onView;
+import static android.support.test.espresso.Espresso.openActionBarOverflowOrOptionsMenu;
 import static android.support.test.espresso.action.ViewActions.clearText;
 import static android.support.test.espresso.action.ViewActions.click;
 import static android.support.test.espresso.action.ViewActions.typeText;
@@ -29,12 +32,12 @@ public class WishlistActivityTest {
         onData(anything()).inAdapterView(withId(R.id.list_item_wishlist))
                 .atPosition(0)
                 .perform(click());
-        onView(withId(R.id.editText_wishlist_nama)).perform(clearText());
-        onView(withId(R.id.editText_wishlist_nama)).perform(typeText("sabun"));
-        onView(withId(R.id.action_save)).perform(click());
-    }
-
-    @Test
-    public void simpleTest() {
+        try {
+            onView(withId(R.id.action_delete)).perform(click());
+        } catch (NoMatchingViewException e) {
+            openActionBarOverflowOrOptionsMenu(InstrumentationRegistry.getTargetContext());
+            onView(withText("Delete")).perform(click());
+            onView(withText(R.string.delete)).perform(click());
+        }
     }
 }

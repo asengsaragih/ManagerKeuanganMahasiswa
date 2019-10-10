@@ -29,14 +29,15 @@ public class AllActivityTest {
             new ActivityTestRule<>(KeuanganActivity.class);
 
     @Test
-    public void testKeuanganAll() {
-        onView(withId(R.id.fab_keuangan)).perform(click());
-        onView(withId(R.id.editText_tanggal_keuangan)).perform(click());
-        onView(withClassName(Matchers.equalTo(DatePicker.class.getName()))).perform(PickerActions.setDate(2019, 9, 19));
-        onView(withId(android.R.id.button1)).perform(click());
-        onView(withId(R.id.editText_jumlah_keuangan)).perform(typeText("50000"));
-        onView(withId(R.id.editText_keterangan_keuangan)).perform(typeText("Makan Siang"));
-        onView(withId(R.id.action_save)).perform(click());
+    public void testUIAll() {
+
+//        onView(withId(R.id.fab_keuangan)).perform(click());
+//        onView(withId(R.id.editText_tanggal_keuangan)).perform(click());
+//        onView(withClassName(Matchers.equalTo(DatePicker.class.getName()))).perform(PickerActions.setDate(2019, 9, 19));
+//        onView(withId(android.R.id.button1)).perform(click());
+//        onView(withId(R.id.editText_jumlah_keuangan)).perform(typeText("50000"));
+//        onView(withId(R.id.editText_keterangan_keuangan)).perform(typeText("Makan Siang"));
+//        onView(withId(R.id.action_save)).perform(click());
 
         //test masuk hutang
         onView(withId(R.id.drawer_keuangan))
@@ -47,14 +48,14 @@ public class AllActivityTest {
         onView(withText(R.string.meminjam)).perform(click());
         onView(withText(R.string.dipinjamkan)).perform(click());
 
-        //test input utang
-        onView(withId(R.id.fab_dipinjamkan)).perform(click());
-        onView(withId(R.id.editText_tanggal_hutang)).perform(click());
-        onView(withClassName(Matchers.equalTo(DatePicker.class.getName()))).perform(PickerActions.setDate(2019, 9, 19));
-        onView(withId(android.R.id.button1)).perform(click());
-        onView(withId(R.id.editText_jumlah_hutang)).perform(typeText("50000"));
-        onView(withId(R.id.editText_nama_hutang)).perform(typeText("Devi"));
-        onView(withId(R.id.action_save)).perform(click());
+//        //test input utang
+//        onView(withId(R.id.fab_dipinjamkan)).perform(click());
+//        onView(withId(R.id.editText_tanggal_hutang)).perform(click());
+//        onView(withClassName(Matchers.equalTo(DatePicker.class.getName()))).perform(PickerActions.setDate(2019, 9, 19));
+//        onView(withId(android.R.id.button1)).perform(click());
+//        onView(withId(R.id.editText_jumlah_hutang)).perform(typeText("50000"));
+//        onView(withId(R.id.editText_nama_hutang)).perform(typeText("Devi"));
+//        onView(withId(R.id.action_save)).perform(click());
 
         //tes masuk ke wishlist
         onView(withId(R.id.drawer_hutang))
@@ -64,9 +65,9 @@ public class AllActivityTest {
                 .perform(NavigationViewActions.navigateTo(R.id.wishlist));
 
 //        //tes input wishlist
-        onView(withId(R.id.fab_wishlist)).perform(click());
-        onView(withId(R.id.editText_wishlist_nama)).perform(typeText("Shampoo Kuda"));
-        onView(withId(R.id.action_save)).perform(click());
+//        onView(withId(R.id.fab_wishlist)).perform(click());
+//        onView(withId(R.id.editText_wishlist_nama)).perform(typeText("Shampoo Kuda"));
+//        onView(withId(R.id.action_save)).perform(click());
 
         //test masuk ke pengaturan
         onView(withId(R.id.drawer_wishlist))
@@ -74,6 +75,7 @@ public class AllActivityTest {
                 .perform(DrawerActions.open());
         onView(withId(R.id.nv_wishlist))
                 .perform(NavigationViewActions.navigateTo(R.id.setting));
+
 
         //tes masuk ke tentang aplikasi
         onView(withId(R.id.textView_Tentang_Aplikasi)).perform(click());
